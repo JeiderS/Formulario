@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/Stayle.css">
+</head>
+<body>
+    <div class="vid-container">
+        <video id="Video1" class="bgvid back" autoplay="true" muted="muted" preload="auto" loop>
+            <source src="/static/Img/pexels-yee-lung-14429009 (1080p).mp4" type="video/mp4">
+        </video>
+<header>
+    <h1 class="formulario">Formulario</h1>
+</header>
+<main>
+    
+    <div class="form-container">
+        <div class="nombre">
+        <h1>Encuesta de Satisfacción del Usuario</h1>
+        </div>
+           <form action="{{url_for('add_respuesta',Usuario = usuario1)}}" method="post"> 
+
+            <div class="question-list">
+                <div class="pregunta_1">
+
+            <p>1. ¿Que te motivo a registrate en mi sitio web?</p>
+
+            <input type="text" placeholder="Respuesta" name="respuesta1" >
+            </div>
+
+            <div class="pregunta_1">
+            <p>2. ¿Cómo calificarías la facilidad de registro en una escala del 1 al 5, siendo 1 muy difícil y 5 muy fácil?</p>
+            <ol>
+                <li>
+                    <div class="input-label-container">
+                        
+                        <input type="radio" id="r_5" name="respuesta2" >
+                        <label for="r_5"> 1.</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="input-label-container">
+                        <input type="radio" id="r_6" name="respuesta2" >
+                        <label for="r_6"> 2.</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="input-label-container">
+                        <input type="radio" id="r_7" name="respuesta2" >
+                        <label for="r_7"> 3. </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="input-label-container">
+                        <input type="radio" id="r_16" name="respuesta2" >
+                        <label for="r_16"> 4. </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="input-label-container">
+                        <input type="radio" id="r_8" name="respuesta2" >
+                        <label for="r_8"> 5. </label>
+                    </div>
+                </li>
+            </ol>
+            </div>
+
+            <div class="pregunta_1">
+            <p>3. ¿Encontraste algún problema o dificultad durante el proceso de registro? Si es así, ¿puedes describirlo?</p>
+            <ol>
+                <li>
+                    <div class="input-label-container">
+                        
+                        <input type="radio" id="r_9"  >
+                        <label for="r_9" name="respuesta3">SI</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="input-label-container">
+                        <input type="radio" id="r_10" >
+                        <label for="r_10" name="respuesta3">NO</label>
+                    </div>
+                </ol>
+                <input type="text" placeholder="Respuesta2" name="respuesta3">
+            </div>
+
+            <div class="pregunta_1">
+            <p>4. ¿Estás satisfecho con la información que se te pidió proporcionar durante el registro? ¿Fue demasiada, muy poca o la justa?</p>
+            <ol>
+                <li>
+                    <div class="input-label-container">
+                        
+                        <input type="radio" id="r_11"  >
+                        <label for="r_11" name="respuesta4">Demaciada</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="input-label-container">
+                        <input type="radio" id="r_12"  >
+                        <label for="r_12" name="respuesta4">Poca.</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="input-label-container">
+                        <input type="radio" id="r_13" >
+                        <label for="r_13" name="respuesta4">Justa</label>
+                    </div>
+                </ol>
+                <input type="text" placeholder="Escribe por que.."  name="respuesta4">
+            </div>
+
+            <div class="pregunta_1">
+            <p>5. ¿Hubo alguna característica o información adicional que te gustaría haber visto durante el proceso de registro?</p>
+            <ol>
+                <li>
+                    <div class="input-label-container">
+                        
+                        <input type="radio" id="r_14"  >
+                        <label for="r_14" name="respuesta5">SI</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="input-label-container">
+                        <input type="radio" id="r_15" >
+                        <label for="r_15" name="respuesta5">NO</label>
+                    </div>
+                </li>
+            </ol>
+            <input type="text" placeholder="Cual.." name="respuesta5">
+            </div>
+
+            <div class="pregunta_1">
+            <p>6. ¿Tienes algún comentario adicional o sugerencia para mejorar la experiencia de registro en nuestro sitio web?</p>
+
+            <div>
+                <input type="text" placeholder="Escriba su respuesta" name="respuesta6">
+            </div>
+            </div>
+
+        </div>
+
+            <input type="submit" value="Enviar respuestas">
+        </form>
+        
+        
+    </div>
+    
+</main>
+
+</html>

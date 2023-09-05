@@ -1,0 +1,143 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300);
+
+body {
+    font-family: 'inter';
+    margin: 0;
+    padding: 0px;
+    min-height: 100vh;
+}
+
+.vid-container{
+    position:relative;
+    height:100vh;
+    overflow:hidden;
+}
+.bgvid.back {
+    position: fixed; right: 0; bottom: 0;
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto; z-index: -100;
+}
+
+header{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    background-color: #2F5C7B;
+}
+
+.formulario{
+    color: white;
+    font-size: 20px;
+}
+
+.nombre:hover{
+    background: #E8E2E0 ;
+}
+
+.nombre{
+    padding: 10px;
+    margin-right: 17px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.form-container {
+    background-color: #FBFAEA ;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 850px;
+    width: 100%;
+    overflow-y: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 18px;
+    font-family: 'inter';
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.input-label-container {
+    display: flex;
+    align-items: center;
+}
+
+.question-list {
+    max-height: 300px; 
+    overflow-y: auto;
+}
+
+.pregunta_1{
+    padding: 20px;
+    margin-right: 17px;
+}
+
+.pregunta_1:hover{
+    background: #E8E2E0 ;
+}
+
+@media screen and (max-width: 986px) {
+    .bgvid{
+height: 100px!important;
+    }
+}
+
+@media screen and (min-width: 986px) {
+    .bgvid.back {
+width: 100%;
+    }
+}
+
+input[type="text"] {
+    width: 700px; 
+    height: 50px; 
+    margin-left: 20px; 
+    margin-right: 10px; 
+    display:block;
+    outline: none;
+    position: relative;
+    padding: 10px;
+}
+
+input::placeholder{
+    position: absolute;
+    top: 10;
+    left: 10;
+}
+input[type="submit"] {
+    background-color: #2F5C7B;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+input[type="submit"]:hover {
+    background-color: #555;
+}
